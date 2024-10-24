@@ -1,0 +1,1 @@
+Determine the probabilities of each one of the possible tichu combinations through Monte Carlo simulations
