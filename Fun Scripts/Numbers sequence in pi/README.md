@@ -1,0 +1,3 @@
+Given a sequence of numbers by user (p.e 234), the programme finds out if this sequence exists in pi and reveals its location (p.e. index 260-262)
+An interpretation of the idea that pi has infinite digits: since it has infinite digits, then we can safely speculate that each number, no matter how big it is, can be a part of pi digits in some position-index
+Of course this script "imports" just a small fraction of the first pi digits

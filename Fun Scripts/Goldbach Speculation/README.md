@@ -1,0 +1,1 @@
+According to Goldbach's speculation, each even natural number can be written as a sum of 2 odd numbers (p.e. 12 = 7 + 5,  46 = 3 + 43). This programme examines this speculation for relatively low numbers (small upper bound).
