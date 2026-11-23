@@ -25,7 +25,7 @@ plt.show()
 
 
 
-# 1b) plt.bar()
+# 1b1) plt.bar()
 x = list(range(1, 11))
 xticks = ["Dog", "Cat", "Rabbit", "Sheep", "Goat", "Cow", "Goldfish", "Snake", "Lion", "Tiger"]
 y = np.random.randint(1, 101, 10)
@@ -50,6 +50,35 @@ plt.ylabel("bar height")
 plt.title("plt.bar() - Overlapping Bar Chart Example")
 plt.legend()
 plt.show()
+
+# 1b2) plt.bar() with printed values
+# ---------------- Bar values printed and centrally positioned ----------------
+def label_bars_center(bars, decimals=2, color="white", fontsize=12):
+    """
+    Write each bar's height as a percentage, centered inside the bar.
+    """
+    plt.gca().bar_label(
+        bars,
+        fmt=f"%.{decimals}f%%",
+        label_type="center",
+        color=color,
+        fontsize=fontsize,
+        fontweight="bold",
+    )
+
+xticks = ["Baseline", "Conservative", "Balanced", "Bomb-oriented"]
+x = list(range(len(xticks)))
+y = [5.0861, 20.7582, 14.4762, 20.1131]
+plt.figure(figsize=(12, 7))
+bars = plt.bar(x, y)
+label_bars_center(bars)
+plt.title("Bomb probabilities per strategy")
+plt.xlabel("Strategies")
+plt.ylabel("Probability [%]")
+plt.xticks(x, xticks)
+plt.show()
+
+
 
 
 # 1c) plt.barh()
